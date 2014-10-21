@@ -40,7 +40,7 @@ void setup() {
     particles = new ArrayList<Particle>();
     
     //Base picture
-    base= loadImage("patron.jpg");
+    base= loadImage("people.jpg");
 
     
     
