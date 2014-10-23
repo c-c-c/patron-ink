@@ -1,5 +1,3 @@
-//Procedural portraits
-//Ale González, 2013 
 
 
 var
@@ -10,7 +8,7 @@ var
   FILL = #FFFFFF,
   STROKE = -1,
   ALFA = 75,
-  BACKGROUND = #000000
+  BACKGROUND = #000000;
   SMOOTHNESS = .0005;
 
 PVector[] DIRECTIONS;
@@ -23,6 +21,7 @@ PImage top;
 
 
 void setup() {
+    frameRate(1000);
     size(800, 800);
     fill(FILL, ALFA);
     noStroke();
@@ -40,7 +39,7 @@ void setup() {
     particles = new ArrayList<Particle>();
     
     //Base picture
-    base= loadImage("people.jpg");
+    base= loadImage("austin.jpg");
 
     
     
@@ -66,9 +65,9 @@ void draw() {
 } 
 
 //Clean canvas
-void keyPressed() {
-    background(BACKGROUND);  
-}
+//void keyPressed() {
+//    background(BACKGROUND);  
+//}
 
 
 
